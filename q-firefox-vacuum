@@ -1,0 +1,7 @@
+#!/bin/bash
+# vacuum and reindex firefox sqlite database files
+
+find ~/.mozilla/firefox -name *.sqlite \
+	-exec ls -lh {} \; \
+	-exec sqlite3 {} "VACUUM;" \; \
+	-exec sqlite3 {} "REINDEX;" \;
