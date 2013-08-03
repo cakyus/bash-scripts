@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+# set xfce4-terminal's title to basename of current directory
+#
+# @require xtitle
+#
+
+xtitle `basename $PWD`
