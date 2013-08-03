@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# reclusively change files and directories permission for website
+# coz, chmod-ing 777 everthing is just insane
+#
+# @link http://movabletripe.com/archive/recursively-chmod-directories-only/
+#
+
+find . -type d -exec chmod 755 {} \;
+find . -type f -exec chmod 644 {} \;
