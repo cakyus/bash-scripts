@@ -1,5 +1,6 @@
 #!/bin/bash
 # Purpose: Terminate clip process
+# @link https://stackoverflow.com/a/21238172/82126
 
 # Configuration
 #  * Process timeout ( in seconds )
